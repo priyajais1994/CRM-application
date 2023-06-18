@@ -4,8 +4,8 @@ import axios from 'axios';
 
  const BASE_URL = "http://localhost:8000";
 
- // const BASE_URL = process.env.React_APP_CRM_BACKEND_URL;
- // console.log(process.env);
+  // const BASE_URL = process.env.React_APP_CRM_BACKEND_URL;
+  
 export async function getAllTickets(data)
 {
     return axios.get(`${BASE_URL}/crm/api/v1/tickets`, {
