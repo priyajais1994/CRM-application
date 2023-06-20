@@ -16,7 +16,7 @@ function TicketCreationModal(props){
         console.log(description);
 
         // API call
-        const ticket = {title, priority, description};
+        const ticket = {title, ticketPriority:priority, description};
         createnewticket(ticket)
         .then(res=>{
             if(res.status===201)

@@ -10,7 +10,7 @@ const useTicketUpdate=(fetchtickets)=>{
 
         console.log(ticketDetails);
         setTicketUpdateModal(true);
-        setSelectedCurrTicket(ticketDetails);
+        setSelectedCurrTicket( { ...ticketDetails });
     }
     
     const closeTicketUpdateModal =() =>{
