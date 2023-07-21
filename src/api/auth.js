@@ -1,10 +1,10 @@
-import axios from 'axios';
+ import axios from 'axios';
 
   
 
- // const BASE_URL = "https://crm-backend-app-r0ik.onrender.com";  // my crm backend deployment link
+  const BASE_URL = "https://crm-backend-app-r0ik.onrender.com";  
 
-   const BASE_URL = "http://localhost:8000";
+   // const BASE_URL = "http://localhost:8000";
 
  
 
