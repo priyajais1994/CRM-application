@@ -5,7 +5,10 @@ import React from 'react';
 import { Icon } from '@mui/material';
 
 
+
 function UserTable ( props){
+
+
 
     return(
 
@@ -28,7 +31,8 @@ function UserTable ( props){
 
           options = {{
             
-                
+                exportAllData:true,
+                exportButton: true,
                 sorting: true,
                 filtering: true,
                 rowStyle:{

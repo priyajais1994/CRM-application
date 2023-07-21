@@ -1,9 +1,12 @@
 import axios from 'axios';
 
- // const BASE_URL= "https://relevel-crm-be.herokuapp.com"; // this is crm backend app deployment link on herokuapp
+  
 
-  const BASE_URL = "https://crm-backend-app-r0ik.onrender.com"; // crm backend app deployment link on localhost 8000
- //const BASE_URL = "https://crm-application-zysm.onrender.com/"; // crm backend app deployment link on render
+ // const BASE_URL = "https://crm-backend-app-r0ik.onrender.com";  // my crm backend deployment link
+
+   const BASE_URL = "http://localhost:8000";
+
+ 
 
   // const BASE_URL = process.env.React_APP_CRM_BACKEND_URL;
 

@@ -10,6 +10,8 @@ import UserTable from "../components/UserTable/UserTable";
 import UserUpdateModal from "../components/UserUpdateModal/UserUpdateModal";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import useCreateUser from "../hooks/useCreateUser";
+import UserCreationModal from "../components/UserCreationModal/UserCreationModal";
 
 
 
@@ -17,6 +19,9 @@ import { useEffect } from "react";
 
 
 function Admin(){
+
+  const {createUserModal, CloseCreateUserModal, OpenCreateUserModal} = useCreateUser();
+
   console.log("inside admin");
 
     const location = useLocation();
@@ -77,6 +82,10 @@ function Admin(){
                 <div style={{ maxWidth: '100%' }}>
 
             <UserTable title={"USER RECORDS"} editUsers={editUsers} userDetails={userDetails}/>
+
+            <input className ="bg-primary border-white text-white" style={{width:"100%"}} type="submit" value= "Create New User" onClick={OpenCreateUserModal} />
+
+            <UserCreationModal show = {createUserModal} onClose={CloseCreateUserModal}/>
 
             <UserUpdateModal selectedCurrUser={selectedCurrUser} userUpdateModal={userUpdateModal} 
     

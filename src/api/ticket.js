@@ -1,8 +1,8 @@
 import axios from 'axios';
 
- // const BASE_URL= "https://relevel-crm-be.herokuapp.com";
+  const BASE_URL= "http://localhost:8000";
 
- const BASE_URL = "https://crm-backend-app-r0ik.onrender.com";
+ // const BASE_URL = "https://crm-backend-app-r0ik.onrender.com";
 
   // const BASE_URL = process.env.React_APP_CRM_BACKEND_URL;
   
@@ -34,6 +34,16 @@ export async function createnewticket(ticket)
             'x-access-token': localStorage.getItem("token")
         }
     }); 
+}
+
+// API function for delete ticket by id
+
+export async function deleteTicket(id){
+    return axios.delete(`${BASE_URL}/crm/api/v1/tickets/${id}`,{
+        headers:{
+            'x-access-token':localStorage.getItem("token")
+        }
+    })
 }
 
     

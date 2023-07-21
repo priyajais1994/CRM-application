@@ -41,6 +41,7 @@ function App() {
            <Route path="/Customer/CreateTicket" element ={ <Auth> <Customer/> </Auth>}/>
             <Route path ="/Engineer" element= { <Auth> <Engineer/> </Auth>}/>
            <Route path ="/Admin"  element= {<Auth> <Admin/> </Auth>}/>
+           <Route exact path ="/Admin/CreateUser" element = {  <Admin/> }/>
            <Route path ="/Admin/:userId"  element= {<Auth> <Admin/> </Auth>}/>
            <Route path = "/Custom" element = { <Custom/> }/>
         </Routes>
